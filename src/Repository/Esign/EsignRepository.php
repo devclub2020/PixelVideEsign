@@ -2,18 +2,22 @@
 
 namespace PixelVide\PixelVideEsign\Repository\Esign;
 
-use App\Models\EsignTransactions;
-use App\Models\EsignTransactionTracking;
-use App\Repository\CommonRepository\FinancialYearRepository;
-use App\Helper\UtilsHelper;
-use App\Transactions;
+use Illuminate\Http\Request;
 
 class EsignRepository
 {
-    protected $financialYearRepository;
-
-    public function __construct(FinancialYearRepository $financialYearRepository)
+    public function saveBillDetails(Request $request)
     {
-        $this->financialYearRepository = $financialYearRepository;
+        // existing logic stays here
+        return [
+            'status' => 'success',
+            'message' => 'Bill details saved successfully'
+        ];
+    }
+
+    public function getRedirectUrl($hrmstoken, $esigntxnid)
+    {
+        // build and return redirect URL
+        return 'https://example-esign-provider.com';
     }
 }

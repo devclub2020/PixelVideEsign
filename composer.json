@@ -1,15 +1,15 @@
 {
     "name": "pixelvide/pixelvide-esign",
-    "description": "Reusable PixelVide eSign Laravel package",
+    "description": "PixelVide reusable eSign package",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ravi Kiran"
+            "name": "Ravikiran"
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "illuminate/support": "6.10.*",
         "illuminate/routing": "6.10.*",
         "illuminate/view": "6.10.*"
